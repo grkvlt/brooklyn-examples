@@ -15,23 +15,28 @@
 
     <repositories>
         <repository>
-            <id>cloudsoft-releases</id>
-            <url>http://developers.cloudsoftcorp.com/download/maven2/</url>
+            <id>cloudsoft-release</id>
+            <url>http://ccweb.cloudsoftcorp.com/maven/cloudsoft-release</url>
         </repository>
-            <repository>
-                <id>libs-snapshot-local</id>
-                <url>http://ccweb.cloudsoftcorp.com/maven/libs-snapshot-local/</url>
-                <snapshots>
-                    <enabled>true</enabled>
-                    <updatePolicy>never</updatePolicy>
-                    <checksumPolicy>fail</checksumPolicy>
-               </snapshots>
-         </repository>
+        <repository>
+            <id>libs-release-local</id>
+            <url>http://ccweb.cloudsoftcorp.com/maven/libs-release-local/</url>
+        </repository>
+        <repository>
+            <id>libs-snapshot-local</id>
+            <url>http://ccweb.cloudsoftcorp.com/maven/libs-snapshot-local/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
     </repositories>
 
     <modules>
         <module>hello-world-webapp</module>
         <module>simple-web-cluster</module>
+        <module>simple-messaging-pubsub</module>
         <module>hadoop-and-whirr</module>
     </modules>
 
